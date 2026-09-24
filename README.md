@@ -23,10 +23,11 @@ for short content such as videoclips or short movies, ...kbps average for the vi
 -- VIDEO --  
 Video is ~0.1mp and mod16, even if aspect ratio is slightly off, the "aspect" flag will take care of it  
 there is 4 aspect ratios:  
-2.264:1 480*208 if text on screen ended up getting cropped by 2:1  
-2:1 to encode movies that are originally in 2.35-2.40 448*224  
-16:9 432*240  
-4:3  368*272  
+2.264:1 480x208 if text on screen ended up getting cropped by 2:1  0.100 
+2:1 to encode movies that are originally in 2.35-2.40 448x224  0.100
+16:9 432*240  0.104
+1.66 416*256  0.106  (for some old movies)
+4:3  368*272  0.100
 Framerate will try to stick to the original source. 23.976/24/25/29.97/30 are allowed. For ntsc variants, do prefer fractional values for precision   
 -- Audio --  
 Audio will be downstreamed to mono. Fidelity before stereophony 
